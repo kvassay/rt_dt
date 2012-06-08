@@ -1,0 +1,26 @@
+#ifndef DEFINITIONS_H
+#define DEFINITIONS_H
+
+#include <vector>
+
+typedef unsigned short d_STATESCOUNT;
+typedef unsigned short d_MEASURESCOUNT;
+typedef unsigned int d_COMPONENTSCOUNT;
+typedef int d_SYSTEMCONFIGURATIONSCOUNT;
+typedef double d_PROBABILITY;
+typedef double d_IMPORTANCEINDEX;
+typedef int d_ERRORCODE;
+typedef char d_LDVALUE;
+
+typedef std::vector<d_STATESCOUNT> StateVector;
+
+const d_SYSTEMCONFIGURATIONSCOUNT c_MAX_SYSTEM_CONFIGURATIONS_COUNT = 100000;
+const d_STATESCOUNT c_MAX_SYSTEM_STATES_COUNT = 10;
+const d_STATESCOUNT c_MIN_COMPONENT_STATES_COUNT = 2;
+const d_STATESCOUNT c_MAX_COMPONENT_STATES_COUNT = 10;
+const d_COMPONENTSCOUNT c_MAX_COMPONENTS_COUNT = 100;
+const d_PROBABILITY c_PROBABILITY_EPSILON = 10e-10;
+
+#define CHECK_PROBABILITIES_SUM(probability) (((probability) > 1-c_PROBABILITY_EPSILON && (probability) < 1+c_PROBABILITY_EPSILON))
+
+#endif // DEFINITIONS_H

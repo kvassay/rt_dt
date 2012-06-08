@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file alias="calculator">Resources/Icons/calculator.png</file>
+        <file alias="close">Resources/Icons/close.png</file>
+    </qresource>
+</RCC>
