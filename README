@@ -1,1 +1,10 @@
-README
+In the program, there are implemented new generalizations of structural, Birnbaum's and criticality importance measures for multi-state system,
+that are based on a definition of a boundary vector for multi-state system.
+Importance measures are tools of importance analysis of reliability engineering. They estimate peculiarities of influence on a system particular system component.
+
+This program has been implemented in C++ programming language with Qt 4.7.4.
+
+Instalation:
+1. Download the source codes.
+2. Download and install Qt SDK (http://qt.nokia.com/downloads).
+3. Run qmake and then make in a directory, where you downloaded sources. 
